@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 768 1024" style="enable-background:new 0 0 768 1024;" xml:space="preserve">
+
+<style type="text/css">
+	.st0{fill:#FFCD36;}
+</style>
+
+		<rect x="60" y="100" id="square" class="st0" width="140" height="140"/>
+		<g>
+			<rect x="60" y="380" id="crossSection1" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -254.5254 525.3051)" class="st0" width="139.8" height="19.5"/>
+			<rect x="60" y="379.2" id="crossSection2" class="st0" width="139.8" height="19.5"/>
+		</g>
+		<polygon id="cross" class="st0" points="205.3,594.4 145.1,594.4 145.1,535.3 125.6,535.3 125.6,594.4 65.5,594.4 65.5,613.9 125.6,613.9 
+			125.6,675.1 145.1,675.1 145.1,613.9 205.3,613.9 "/>
+		<circle id="circle" class="st0" cx="70" cy="792.9" r="20"/>
+		<circle id="circle2" class="st0" cx="70" cy="842.9" r="20"/>
+
+			<animate
+						xlink:href="#square"
+						attributeName="fill"
+						from="#FFCD36"
+						to="#000000"
+						dur="1.2s"
+						begin="+1.2s"
+						fill="remove"
+						repeatCount="1" />
+
+			<animateTransform 
+						xlink:href="#square"
+						attributeName="transform"
+                        attributeType="XML"
+                        type="rotate"
+                        from="0 130 170"
+                        to="360 130 170"
+                        dur="10s"
+                        repeatCount="indefinite"/>
+						<!-- type = scale | rotate | skewX | skewY	 -->
+                        <!--  from="0 130 170" >> R - градусы, X - точка вращения по X, Y - точка вращения по Y, XY относительно начала координат -->
+
+			<animate xlink:href="#cross" 
+						attributeName="fill"
+						values="#FFCD36 ; #ff3636 ; #FFCD36;"
+                 		keyTimes="0 ; 0.5 ; 1"
+						dur="3.2s" 
+						begin="+2.4s" 
+						fill="freeze" 
+						repeatCount="indefinite"/>
+						<!-- анимация по ключевым значениям -->
+
+
+ 			<animate 	
+ 						xlink:href="#circle"
+ 						attributeType="XML" 
+ 						attributeName="cx" 
+ 						from="70" 
+ 						to="505"
+        				dur="2s" 
+        				repeatCount="indefinite"/>
+
+        	<animate 	
+ 						xlink:href="#circle2"
+ 						attributeType="XML" 
+ 						attributeName="cx" 
+ 						values="70 ; 505 ; 70 ; 50 ; 70"
+                 		keyTimes="0 ; 0.45 ; 0.85 ; 0.90 ; 1"
+        				dur="4s" 
+        				repeatCount="indefinite"/>
+
+</svg>
